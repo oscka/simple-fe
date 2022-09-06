@@ -1,0 +1,25 @@
+##############
+### local
+##############
+
+server:
+  port: 9321
+
+
+api:
+  simple:
+    url: http://localhost:9320/api
+    
+  
+
+    
+
+        
+
+
+
+
+
+
+
+
