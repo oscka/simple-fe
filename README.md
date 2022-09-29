@@ -5,7 +5,9 @@ OpenFeign client테스틑 위해 사용하며 동작을 확인하기 위해 simp
 
 빌드 및 실행을 위해 jdk(jdk11이상)는 미리 설치되어 있어야 하며 maven wrapper를 통해 다음과 같이 실행하시기 바랍니다.
 
+```bash
 #build
 ./mvnw clean install -DskipTests
 #run
 ./mvnw spring-boot:run
+```
