@@ -20,14 +20,13 @@ public class SimpleFeController {
 	@GetMapping("/hello")
 	public String hello() {		
 		log.info("==========simple-fe hello()");		
-		return service.hello();
-		
+		return service.hello();		
 	}
+
 	@GetMapping("/simple")
 	public List<Simple> simple(){		 
 		log.info("==========simple-fe simple()");
-		return service.simple();
-		
+		return service.simple();		
 	}
 	
 	@GetMapping("/version")
@@ -36,5 +35,19 @@ public class SimpleFeController {
 		return service.version();
 		
 	}
+
+	@GetMapping("/local_version")
+	public String localVersion(){
+		log.debug("====== simple-fe  local version()");
+		return "=====  version 1.0";
+	}	
+
+	@GetMapping("/local_hello")
+	public String localHello() {		
+		log.debug("==========simple-fe debug local hello()");
+		log.info("==========simple-fe local hello()");		
+		return "hello local world";
+	}
+
 
 }
